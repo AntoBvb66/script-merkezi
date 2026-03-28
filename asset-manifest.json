@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/script-merkezi/static/css/main.ec569dd8.css",
+    "main.js": "/script-merkezi/static/js/main.3471e16d.js",
+    "index.html": "/script-merkezi/index.html",
+    "main.ec569dd8.css.map": "/script-merkezi/static/css/main.ec569dd8.css.map",
+    "main.3471e16d.js.map": "/script-merkezi/static/js/main.3471e16d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec569dd8.css",
+    "static/js/main.3471e16d.js"
+  ]
+}
