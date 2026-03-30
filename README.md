@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# 🏰 TW Script Center / TW Script Merkezi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌍 **[English](#english)** | 🇹🇷 **[Türkçe](#türkçe)**
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<a id="english"></a>
+## 🌍 English
 
-### `npm start`
+**TW Script Center** is an advanced, React-based web application designed to provide powerful analysis and visualization tools for Tribal Wars (Klanlar) players. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> **⚠️ Disclaimer:** This project is developed strictly for **informational and analytical purposes**. It is an independent tool and is not officially affiliated with InnoGames. 
+> 
+> **🛑 Server Friendly (1-Hour Cache):** To respect the game's servers and prevent unnecessary load, this application utilizes a strict **1-hour local caching mechanism**. When world data (`village.txt`, `player.txt`, `ally.txt`) is fetched, it is stored in your browser. Any subsequent requests within the next hour will load instantly from the cache without pinging the game servers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✨ Features
 
-### `npm test`
+* **⏱️ Building Times Calculator:** * Calculate exact building completion times based on World Speed and HQ Level.
+  * Features an interactive, drag-and-drop table column system to customize your view.
+* **📍 Teleport & Continent Analysis:**
+  * Tracks player movements and detects exact "Teleportation" events by comparing old and new coordinates.
+  * Groups teleports by target continents and visually draws the movement paths on a dynamic canvas map.
+  * Includes a manual data entry and archiving system for historical comparisons.
+* **🗺️ Advanced Map Generator:**
+  * A highly customizable map rendering engine similar to TWStats.
+  * Automatically assigns visually distinct (Golden Angle HSL) colors to tribes situated close to each other.
+  * Calculates the **Center of Mass** for tribes/players to place highly readable tags (with dark stroke/shadows) exactly where their village density is highest.
+  * Features smart autocomplete for player searches and automatic point-based sorting for tribes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🛠️ Technical Stack
+* **Frontend:** React.js, React Router (HashRouter for static hosting)
+* **Storage:** Browser LocalStorage for settings, archives, and 1-hour data caching.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a id="türkçe"></a>
+## 🇹🇷 Türkçe
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**TW Script Merkezi**, Klanlar (Tribal Wars) oyuncuları için güçlü analiz ve görselleştirme araçları sunmak amacıyla tasarlanmış, React tabanlı gelişmiş bir web uygulamasıdır.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> **⚠️ Yasal Uyarı:** Bu proje tamamen **bilgi vermek ve istatistiksel analiz yapmak** amacıyla geliştirilmiştir. Bağımsız bir araçtır ve InnoGames ile resmi bir bağlantısı yoktur.
+>
+> **🛑 Sunucu Dostu (1 Saatlik Önbellek):** Oyun sunucularını yormamak ve gereksiz trafik yaratmamak adına bu uygulama katı bir **1 saatlik önbellek (cache) sistemi** kullanır. Dünya verileri (`village.txt`, `player.txt`, `ally.txt`) çekildiğinde tarayıcınıza kaydedilir. Sonraki 1 saat içindeki tüm işlemleriniz, oyun sunucularına istek atmadan doğrudan tarayıcınızın hafızasından şimşek hızında gerçekleşir.
 
-### `npm run eject`
+### ✨ Özellikler
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* **⏱️ Bina Süreleri Hesaplayıcı:** * Dünya Hızı ve Ana Bina seviyesine göre kesin inşaat sürelerini hesaplar.
+  * Sütunların yerini sürükle-bırak (drag & drop) yöntemiyle değiştirebileceğiniz interaktif bir tabloya sahiptir.
+* **📍 Işınlanma ve Kıta Analizi:**
+  * Oyuncu hareketlerini takip eder ve eski/yeni koordinatları karşılaştırarak "Işınlanma" (Teleport) olaylarını tam olarak tespit eder.
+  * Işınlanmaları hedef kıtalara göre gruplar ve harita üzerinde hareket yönlerini çizgilerle çizer.
+  * Geçmiş verileri saklamak ve karşılaştırmak için manuel giriş ve arşivleme sistemi içerir.
+* **🗺️ Gelişmiş Harita Oluşturucu:**
+  * TWStats benzeri, tamamen özelleştirilebilir bir harita çizim motoru.
+  * Yan yana olan klanların haritada birbirine karışmaması için zıt renkleri (Altın Açı HSL algoritması) otomatik olarak atar.
+  * Klanların ve oyuncuların **Ağırlık Merkezini (Center of Mass)** hesaplayarak, klan isimlerini (okunabilir dış gölge ile birlikte) tam olarak yoğunluğun en yüksek olduğu noktaya basar.
+  * Oyuncu aramaları için akıllı otomatik tamamlama (autocomplete) ve klanlar için puana göre otomatik sıralama özellikleri sunar.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 🛠️ Kullanılan Teknolojiler
+* **Arayüz:** React.js, React Router (Statik yayın için HashRouter)
+* **Veri Saklama:** Ayarlar, arşivler ve 1 saatlik veri önbelleği (cache) için Browser LocalStorage.
