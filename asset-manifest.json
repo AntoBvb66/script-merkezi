@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/script-merkezi/static/css/main.b30e82c9.css",
+    "main.css": "/script-merkezi/static/css/main.7a0c8741.css",
     "main.js": "/script-merkezi/static/js/main.e8ca638c.js",
     "index.html": "/script-merkezi/index.html",
-    "main.b30e82c9.css.map": "/script-merkezi/static/css/main.b30e82c9.css.map",
+    "main.7a0c8741.css.map": "/script-merkezi/static/css/main.7a0c8741.css.map",
     "main.e8ca638c.js.map": "/script-merkezi/static/js/main.e8ca638c.js.map"
   },
   "entrypoints": [
-    "static/css/main.b30e82c9.css",
+    "static/css/main.7a0c8741.css",
     "static/js/main.e8ca638c.js"
   ]
 }
